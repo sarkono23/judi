@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@import url('https://fonts.googleapis.com/css?family=Bebas');*/
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/BEBAS.ttf');
+}
+@font-face {
+  font-family: 'TheLightFont';
+  src: url('../fonts/TheLightFont.ttf');
+}
+@font-face {
+  font-family: 'novamono';
+  src: url('../fonts/novamono.ttf');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+	outline: 0px none;
+	background: none repeat scroll 0% 0% transparent;	
+	text-align:left;
+}
+html{ 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-color:transparent;
+}
+body{
+	font-size:14px;
+	font-family: arial;
+}
+
+a{
+	text-decoration:none;
+	color:#fff;
+	-webkit-transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+a img{
+	border:none;
+}
+a:hover{
+	opacity: 0.5;
+}
+ul {
+	list-style-type: none;
+}
+
+p{
+	text-align:justify;
+	
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0px;
+	clear:both;
+	visibility:hidden;
+	}	
+/* FF, Safari, Opera—p */
+
+.clearfix {
+	display:inline-block;
+	}
+/* IE7, MacIE5—p */
+
+/* The Following Hidden From MacIE \*/
+	* html .clearfix { height:1%; }
+	.clearfix { display:block; height:inherit; }
+
+.clear { 
+	clear: both; 
+	height: 0;
+}
+.container{
+	max-width: 999px;
+	height: auto;
+	margin:0 auto;
+	position: relative;
+}
+#sectionWrapper{
+	width: 100%;
+	height:auto;
+	position:relative;
+	margin:0 auto;
+}
+
+#sectionWrapper #sectionHeader{
+	width:100%;
+	height:163px;
+	/*background: #000;*/
+	/*
+	border-bottom:1px solid #fff568;
+	background: url(../images/bg/header.png) repeat-x;*/
+	position:relative;
+}
+
+#sectionWrapper #sectionHeader #sectionLogo{
+	height:96px;
+	width:340px;
+	left:0;
+	top: 75px;
+	position:absolute;
+}
+#sectionWrapper #sectionHeader #sectionMenu{
+	position: absolute;
+	right: 0;
+	top: 125px;
+	width: 543px;
+	height: 37px;
+	background:url(../images/bg/menu.png) no-repeat;
+}
+#sectionWrapper #sectionHeader #sectionMenu ul{
+	list-style: none;
+	text-align: center;
+}
+#sectionWrapper #sectionHeader #sectionMenu ul li{
+	margin:0 20px;
+	display: inline;
+}
+#sectionWrapper #sectionHeader #sectionMenu ul li a{
+	line-height: 37px;
+	font-weight: bold;;
+	font-size: 14px;
+	}
+#sectionWrapper #sectionInfo{
+	width: 914px;
+	height: 25px;
+	background:rgba(0,0,0,0.5);
+	padding:0 10px 0 75px;
+	position: relative;
+}
+#sectionWrapper  #sectionInfo marquee{
+	line-height: 25px;
+	color: #fff;
+	font-size: 14px;
+	font-style: italic;
+}
+
+#sectionWrapper #slider{
+	width: 999px;
+	height: 425px;
+}
+#sectionWrapper #sectionHeader .login{
+	width: 537px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	top: 58px;
+}
+
+#sectionWrapper #sectionHeader .login input{
+	width:120px;
+	height:33px;
+	line-height: 33px;
+	border:none;
+	position:absolute;
+	font-size:12px;
+	color:#fff;
+	padding: 0 5px;
+	background: #fff;
+}
+#sectionWrapper #sectionHeader .login input.username{
+	left: 177px;
+	top:9px;
+	/*background: url(../images/btn/username.png) no-repeat;*/
+}
+#sectionWrapper #sectionHeader .login input.password{	
+	right: 92px;
+	top: 9px;
+	/*background: url(../images/btn/username.png) no-repeat;*/
+}
+
+
+#sectionWrapper #sectionHeader .login input[type="button"],
+#sectionWrapper #sectionHeader .login input[type="submit"]{	
+	padding:0;
+	border:none;
+	cursor:pointer;
+	position:absolute;
+	top: 0px;
+	
+}
+#sectionWrapper #sectionHeader .login input#btn-login{
+	background:url(../images/bg/login.png) no-repeat;
+	right: 0px;
+	top: 7px;
+	width: 88px;
+	height: 40px;
+}
+#sectionWrapper #sectionHeader .login input#btn-register{
+	background:url(../images/bg/register.png) no-repeat;
+	left: 0px;
+	top: 0px;
+	width: 168px;
+	height: 50px;
+}
+
+
+#sectionWrapper #sectionTransection{
+	position: relative;
+	width: 999px;
+	height: 460px;
+	background: url(../images/bg/transection.png?v=20200506) no-repeat;
+	margin:0 auto;
+}
+
+#sectionWrapper #sectionTransection .transection{
+	position: absolute;
+	width: 310px;
+	height: auto;
+	top: 220px;	
+}
+
+#sectionWrapper #sectionTransection .deposit{
+	left: 19px;
+}
+#sectionWrapper #sectionTransection .withdraw{
+	right: 19px;
+
+}
+#sectionWrapper #sectionTransection .topwinner{
+	left: 345px;
+}
+
+#sectionWrapper #sectionTransection .transection table{
+	border-collapse:collapse; 
+	width: 310px;
+}
+#sectionWrapper #sectionTransection .transection table td{
+	height: 41px;
+	line-height: 41px;
+	border: 0;
+	padding: 0 10px;
+	font-size: 13px;
+	color: #000;
+}
+#sectionWrapper #sectionTransection .transection table td:nth-child(1){
+	width: 40%;
+	text-align: left;
+}
+#sectionWrapper #sectionTransection .transection table td:nth-child(2){
+	width: 20%;
+	text-align: center;
+}
+#sectionWrapper #sectionTransection .transection table td:nth-child(3){
+	width: 40%;
+	text-align: right;
+	padding-right: 30px;
+}
+#sectionWrapper #sectionTransection .jackpot{
+	width: 330px;
+	height: 60px;
+	text-align: center;
+	color: #e7f7f8;
+	font-size: 30px;
+	line-height: 60px;
+	position: absolute;
+	font-family: "arial", serif;
+	font-weight: bold;
+	top: 65px;
+}
+#sectionWrapper #sectionTransection .poker{
+	left: 19px;
+}
+#sectionWrapper #sectionTransection .domino{
+	right: 19px;
+}
+#sectionWrapper #sectionContact{
+
+	width: 997px;
+	height: 53px;
+	background: url(../images/bg/contact.png) repeat-x;
+	border-radius: 10px;
+	border: 1px solid #71a5b5;
+	text-align: center;
+}
+#sectionWrapper #sectionContact img{
+	margin:0 20px;
+	}
+#sectionWrapper #sectionFooter{
+	/*padding:20px 0;*/
+	font-family: 'arial';
+	color: #fff;
+	background: rgba(85,119,127,0.75);
+	padding: 30px 0;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+#sectionWrapper #sectionFooter h2,
+#sectionWrapper #sectionFooter p{
+	text-align: center;
+	padding:0 20px;
+	font-size: 14px;
+}
+#sectionWrapper #sectionFooter p{
+	line-height: 24px;
+	font-size: 14px;
+	}
+#sectionWrapper #sectionFooter h2{
+	margin-top: 20px;
+}
+#sectionWrapper #sectionFooter .copyright{
+	color: #fff;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+
+
+
